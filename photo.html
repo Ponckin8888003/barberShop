@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--  -->
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/hover.css">
+    <!--  -->
+
+    <!-- link -->   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <!--  -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section_login_form">
+        <p class="section_login_form_title">особистий кабінет</p>
+        <p class="section_login_form_subtitle">введіть свій логін та пароль, щоб увійти</p>
+        <form action="" method="post" class="form_login_form">
+            <input type="text" class="icon_text input_icon" value placeholder="Логін">
+            <input type="password" class="icon_password input_icon" value placeholder="Пароль">
+            <section class="form_section">
+              <section class="remember_me_section">
+                <input type="checkbox" id="rememberMeCheckbox">
+                <label for="rememberMeCheckbox" class="remember_me_section_title">Запам'ятайте мене</label>
+              </section>
+              <section class="forgot_password">
+                <p class="forgot_password_title"><u>Я забув пароль!</u></p>
+              </section>
+            </section>
+            <section class="login_button_section">
+                <button class="login_button" type="submit">увійти <span class="login_button_hide_text">в особистий кабінет</span></button>
+                <div class="close_login_button">
+                    <p>закрити</p>
+                </div>
+            </section>
+          </form>
+    </div>
+    <i class="ri-close-line close_button"></i>
+    <header>
+        <!-- Burger menu -->
+        <input type="checkbox" id="checkbox">
+        <label id="toggle" for="checkbox">
+            <span class="burger_menu_span"></span>
+        </label>
+        <div class="burger_menu_mask">
+            <p>роботи</p>
+        </div>
+        <ul class="header_nav_wrapper_list">
+            <div class="nav_li_section li_section">
+                <li class="header_li_item hvr-underline-from-left"><a href="index.html">головна</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="photo.html">наші роботи</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="form.html">записатися</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="#footer">контакти</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="http://xn--j1ae8a.in.ua/">шкм</a></li>
+            </div>
+            <div class="login_li_section li_section">
+                <a href="#" class="login_svg_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g opacity="0.3">
+                            <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white"/>
+                            <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white"/>
+                        </g>
+                    </svg>
+                </a>
+                <li class="header_li_item header_li_item_06 hvr-underline-from-left"><a href="#">увійти</a></li>
+            </div>
+        </ul>
+        <!--  -->
+    </header>
+    <main>
+        <section class="main_logo_section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/logo_desktop.png">
+                <source media="(min-width: 767px) and (max-width: 1023px)" srcset="img/logo_tablet.png">
+                <source media="(max-width: 767px)" srcset="img/logo_mobile.png">
+                <img src="img/error.png">
+            </picture>
+        </section>
+    </main>
+    <section class="our_work_section">
+        <section class="our_work_section_title">
+            <p class="our_work_section_title_text">НАШІ РОБОТИ</p>
+            <div class="our_work_section_title_button">
+                <a href="index.html">НА ГОЛОВНУ</a>
+            </div>
+        </section>
+        
+        <section class="our_work_examples_section">
+            <div class="our_work_examples_section_example_01">
+                <section class="our_work_examples_section_example_01_photo_section">
+                    <img src="img/photo-examples-01.png">
+                </section>
+                <section class="our_work_examples_section_example_01_content_section">
+                    <section class="our_work_examples_example_01_content_title_section">
+                        <p class="our_work_examples_example_content_title_section_title_name">Олександр Головенський</p>
+                        <p class="our_work_examples_example_content_title_section_subtitle_name">Де я тільки не стригся, але те, що робите ви - не вміє ніхто інший! Ще раз дякую і до зустрічі!</p>
+                    </section>
+                    <section class="our_work_examples_example_01_content_type_of_example">
+                        <div class="our_work_examples_example_01_content_type_of_example_01 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/scissors-icon.png">
+                            <p>СТРИЖКА</p>
+                        </div>
+                        <div class="our_work_examples_example_01_content_type_of_example_02 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/beard-icon.png">
+                            <p>ГОЛІННЯ</p>
+                        </div>
+                        <div class="our_work_examples_example_01_content_type_of_example_03 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/mustache-icon.png">
+                            <p>ВУСА</p>
+                        </div>
+                    </section>
+                    <div class="label_work_month">
+                        <p class="label_work_month_text">РОБОТА МІСЯЦЯ</p>
+                    </div>
+                </section>
+            </div>
+            <div class="our_work_examples_section_example our_work_examples_section_example_02">
+                <div class="our_work_examples_section_example_img_section">
+                    <picture>
+                        <source media="(min-width: 767px)" srcset="img/photo-examples-02.png">
+                        <source media="(max-width: 767px)" srcset="img/photo-2-mobile.png">
+                        <img src="img/error.png">
+                    </picture>
+                </div>
+                <div class="our_work_examples_section_example_text_content_section">
+                    <div class="our_work_examples_section_example_text_content_section_p_content">
+                        <p class="our_work_examples_example_content_title_section_title_name">Саша Красень</p>
+                        <p class="our_work_examples_example_content_title_section_subtitle_name">Попросив омолодити - омолодили! <br> Хто тепер скаже, що мені 45?</p>
+                    </div>
+                    <section class="our_work_examples_example_01_content_type_of_example">
+                        <div class="our_work_examples_example_01_content_type_of_example_01 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/scissors-icon.png">
+                            <p>СТРИЖКА</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="our_work_examples_section_example our_work_examples_section_example_03">
+                <div class="our_work_examples_section_example_img_section">
+                    <picture>
+                        <source media="(min-width: 767px)" srcset="img/photo-examples-03.png">
+                        <source media="(max-width: 767px)" srcset="img/photo-3-mobile.png">
+                        <img src="img/error.png">
+                    </picture>
+                </div>
+                <div class="our_work_examples_section_example_text_content_section">
+                    <div class="our_work_examples_section_example_text_content_section_p_content">
+                        <p class="our_work_examples_example_content_title_section_title_name">Саша Красень</p>
+                        <p class="our_work_examples_example_content_title_section_subtitle_name">До зимового сезону — готовий!</p>
+                    </div>
+                    <section class="our_work_examples_example_01_content_type_of_example">
+                        <div class="our_work_examples_example_01_content_type_of_example_01 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/beard-icon.png">
+                            <p>БОРОДА</p>
+                        </div>
+                        <div class="our_work_examples_example_01_content_type_of_example_02 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/mustache-icon.png">
+                            <p>ВУСА</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="our_work_examples_section_example our_work_examples_section_example_04">
+                <div class="our_work_examples_section_example_img_section">
+                    <picture>
+                        <source media="(min-width: 767px)" srcset="img/photo-examples-04.png">
+                        <source media="(max-width: 767px)" srcset="img/photo-4-mobile.png">
+                        <img src="img/error.png">
+                    </picture>
+                </div>
+                <div class="our_work_examples_section_example_text_content_section">
+                    <div class="our_work_examples_section_example_text_content_section_p_content">
+                        <p class="our_work_examples_example_content_title_section_title_name">Андрій Молодик</p>
+                        <p class="our_work_examples_example_content_title_section_subtitle_name">Як тільки заростаю і волосся починає заважати бачити — бігом у Бородинський!</p>
+                    </div>
+                    <section class="our_work_examples_example_01_content_type_of_example">
+                        <div class="our_work_examples_example_01_content_type_of_example_01 our_work_examples_example_01_content_type_of_example_00">
+                            <img src="img/scissors-icon.png">
+                            <p>СТРИЖКА</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="price_list_angle_mask"></div>
+    <section class="price_list_section">
+        
+        <div class="price_list_section_wrapper_section">
+            <p class="price_list_section_wrapper_section_title">ПРЕЙСКУРАНТ</p>
+            <section class="price_list_table_section">
+                <table>
+                    <tr>
+                        <td class="table_number">1</td>
+                        <td class="table_name">Класична стрижка <br> <span class="mobile_tablet_span">з миттям голови</span></td>
+                        <td class="table_service">з миттям голови</td>
+                        <td class="table_price">500 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="table_number">2</td>
+                        <td class="table_name">Сучасний варіант <br> <span class="mobile_tablet_span">з миттям голови</span></td>
+                        <td class="table_service">з миттям голови</td>
+                        <td class="table_price">500 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="table_number">3</td>
+                        <td class="table_name">Індивідуальний підхід <br> <span class="mobile_tablet_span">з миттям голови</span></td>
+                        <td class="table_service">з миттям голови</td>
+                        <td class="table_price">1 000 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="table_number">4</td>
+                        <td class="table_name">Гоління бороди <br> <span class="mobile_tablet_span">без миттям</span></td>
+                        <td class="table_service">без миття</td>
+                        <td class="table_price">200 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="table_number">5</td>
+                        <td class="table_name">Голодіння голови <br> <span class="mobile_tablet_span">з миттям голови</span></td>
+                        <td class="table_service">з миттям голови</td>
+                        <td class="table_price">500 грн.</td>
+                    </tr>
+                </table>
+                <section class="price_list_svg_wrapper_section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="142" height="139" viewBox="0 0 142 139" fill="none">
+                        <path d="M71.9973 21.377V0.99613C71.9973 0.73194 71.8917 0.47857 71.7037 0.29176C71.5158 0.104949 71.2608 0 70.995 0C70.7292 0 70.4742 0.104949 70.2862 0.29176C70.0983 0.47857 69.9927 0.73194 69.9927 0.99613V21.377H71.9973Z" fill="white"/>
+                        <path d="M45.8766 28.3299C46.4479 27.9813 47.0293 27.6526 47.6106 27.3338L37.3468 9.70231C37.2081 9.48549 36.9905 9.3303 36.7394 9.26918C36.4883 9.20805 36.2231 9.24571 35.9993 9.37429C35.7755 9.50286 35.6103 9.71241 35.5383 9.95916C35.4662 10.2059 35.4929 10.4708 35.6128 10.6984L45.8766 28.3299Z" fill="white"/>
+                        <path d="M10.5245 34.5956C10.3929 34.8231 10.3571 35.093 10.4246 35.3467C10.4922 35.6004 10.6577 35.8173 10.8853 35.9503L28.6165 46.1806C28.9372 45.6028 29.268 45.0251 29.6188 44.4573L11.8976 34.227C11.7832 34.1612 11.6569 34.1184 11.5258 34.1013C11.3947 34.0842 11.2615 34.093 11.1339 34.1273C11.0062 34.1616 10.8867 34.2206 10.7821 34.3009C10.6775 34.3813 10.5899 34.4815 10.5245 34.5956Z" fill="white"/>
+                        <path d="M106.658 8.48703C106.544 8.42075 106.418 8.37745 106.288 8.35961C106.157 8.34177 106.024 8.34973 105.896 8.38304C105.769 8.41636 105.649 8.47437 105.544 8.55375C105.439 8.63313 105.351 8.73232 105.285 8.84564L94.4595 27.3737C95.0409 27.7024 95.6222 28.0311 96.1936 28.3698L107.019 9.85173C107.085 9.73863 107.129 9.61356 107.147 9.4837C107.165 9.35383 107.157 9.22172 107.123 9.09494C107.09 8.96816 107.031 8.8492 106.952 8.74488C106.872 8.64056 106.772 8.55294 106.658 8.48703Z" fill="white"/>
+                        <path d="M132.087 35.532C132.202 35.4669 132.303 35.3799 132.383 35.2759C132.464 35.172 132.524 35.0532 132.558 34.9263C132.593 34.7995 132.602 34.6671 132.584 34.5368C132.567 34.4066 132.524 34.281 132.458 34.1673C132.391 34.054 132.303 33.9548 132.198 33.8754C132.093 33.796 131.974 33.738 131.846 33.7047C131.719 33.6714 131.586 33.6634 131.455 33.6812C131.324 33.6991 131.198 33.7424 131.085 33.8087L112.431 44.537C112.772 45.0948 113.103 45.6726 113.434 46.2603L132.087 35.532Z" fill="white"/>
+                        <path d="M22.5524 69.5C22.5524 69.1713 22.5524 68.8326 22.5524 68.5039H1.00233C0.736495 68.5039 0.481549 68.6088 0.293575 68.7956C0.105602 68.9824 0 69.2358 0 69.5C0 69.7642 0.105602 70.0176 0.293575 70.2044C0.481549 70.3912 0.736495 70.4961 1.00233 70.4961H22.5825C22.5725 70.1674 22.5524 69.8387 22.5524 69.5Z" fill="white"/>
+                        <path d="M140.998 68.5039H119.418C119.418 68.8326 119.418 69.1713 119.418 69.5C119.418 69.8287 119.418 70.1674 119.418 70.4961H140.998C141.264 70.4961 141.518 70.3912 141.706 70.2044C141.894 70.0176 142 69.7642 142 69.5C142 69.2358 141.894 68.9824 141.706 68.7956C141.518 68.6088 141.264 68.5039 140.998 68.5039Z" fill="white"/>
+                        <path d="M131.105 103.05L113.383 92.8194C113.063 93.3972 112.732 93.9749 112.381 94.5427L130.102 104.773C130.255 104.859 130.428 104.904 130.604 104.902C130.822 104.9 131.034 104.827 131.207 104.694C131.38 104.561 131.504 104.375 131.561 104.165C131.618 103.955 131.604 103.732 131.522 103.531C131.439 103.33 131.293 103.161 131.105 103.05Z" fill="white"/>
+                        <path d="M9.90301 103.468C9.789 103.534 9.68919 103.622 9.60931 103.726C9.52944 103.83 9.47107 103.949 9.43754 104.076C9.40402 104.203 9.39601 104.335 9.41396 104.465C9.43192 104.595 9.47549 104.72 9.54218 104.833C9.63049 104.985 9.75764 105.111 9.91078 105.198C10.0639 105.286 10.2376 105.331 10.4142 105.331C10.5912 105.333 10.765 105.284 10.9154 105.191L29.5687 94.473C29.2179 93.9052 28.8972 93.3274 28.5664 92.7397L9.90301 103.468Z" fill="white"/>
+                        <path d="M96.1234 110.67C95.5521 111.019 94.9707 111.347 94.3793 111.666L104.643 129.298C104.731 129.45 104.859 129.576 105.012 129.663C105.165 129.751 105.339 129.796 105.515 129.796C105.692 129.798 105.866 129.749 106.016 129.656C106.244 129.523 106.409 129.306 106.477 129.053C106.545 128.799 106.509 128.529 106.377 128.302L96.1234 110.67Z" fill="white"/>
+                        <path d="M34.9713 129.148C34.905 129.262 34.862 129.388 34.8448 129.518C34.8276 129.648 34.8364 129.78 34.8709 129.907C34.9054 130.034 34.9648 130.153 35.0456 130.257C35.1265 130.361 35.2273 130.448 35.3421 130.513C35.5711 130.644 35.8427 130.679 36.0979 130.612C36.3531 130.545 36.5714 130.381 36.7053 130.154L47.5405 111.626C46.9491 111.298 46.3678 110.979 45.8065 110.63L34.9713 129.148Z" fill="white"/>
+                        <path d="M69.9927 117.623V138.004C69.9927 138.268 70.0983 138.521 70.2862 138.708C70.4742 138.895 70.7292 139 70.995 139C71.2608 139 71.5158 138.895 71.7037 138.708C71.8917 138.521 71.9973 138.268 71.9973 138.004V117.623H69.9927Z" fill="white"/>
+                        <path d="M104.984 51.6892C105.155 51.5911 105.305 51.4604 105.425 51.3047C105.546 51.149 105.634 50.9712 105.685 50.7816C105.736 50.592 105.749 50.3942 105.724 50.1996C105.698 50.0049 105.634 49.8172 105.535 49.6471C105.437 49.4771 105.305 49.328 105.148 49.2084C104.992 49.0889 104.813 49.0011 104.622 48.9503C104.431 48.8994 104.232 48.8864 104.036 48.9119C103.84 48.9375 103.652 49.0011 103.48 49.0993L74.9843 65.4856C74.4582 64.9615 73.8333 64.5457 73.1453 64.262C72.4573 63.9784 71.7198 63.8323 70.9749 63.8323C70.2301 63.8323 69.4925 63.9784 68.8046 64.262C68.1166 64.5457 67.4917 64.9615 66.9656 65.4856L46.6284 53.7014C46.2828 53.5006 45.8711 53.4445 45.4839 53.5453C45.0966 53.6462 44.7656 53.8958 44.5636 54.2393C44.3615 54.5827 44.3051 54.9919 44.4066 55.3767C44.5081 55.7615 44.7592 56.0905 45.1048 56.2913L65.5122 68.0656C65.311 68.8396 65.2777 69.6472 65.4146 70.435C65.5514 71.2228 65.8552 71.9726 66.3059 72.6348C66.7566 73.2969 67.3438 73.8563 68.0285 74.2757C68.7133 74.6951 69.48 74.965 70.2778 75.0675C71.0755 75.17 71.8861 75.1027 72.6557 74.8701C73.4253 74.6375 74.1363 74.245 74.7416 73.7185C75.3468 73.1919 75.8325 72.5435 76.1664 71.8162C76.5003 71.089 76.6748 70.2994 76.6782 69.5C76.6773 69.019 76.6133 68.5401 76.4877 68.0755L104.984 51.6892ZM70.995 72.2095C70.4657 72.2095 69.9483 72.0535 69.5082 71.7612C69.0681 71.469 68.725 71.0536 68.5225 70.5676C68.3199 70.0816 68.2669 69.5469 68.3702 69.0309C68.4735 68.515 68.7283 68.0411 69.1026 67.6691C69.4769 67.2972 69.9538 67.0439 70.4729 66.9412C70.992 66.8386 71.5301 66.8913 72.0191 67.0926C72.5081 67.2939 72.9261 67.6348 73.2202 68.0722C73.5143 68.5096 73.6712 69.0238 73.6712 69.5498C73.6581 70.2465 73.3703 70.9103 72.8699 71.3984C72.3694 71.8864 71.6962 72.1598 70.995 72.1597V72.2095Z" fill="white"/>
+                      </svg>
+                      <p class="price_list_svg_title">з 10:00 до 14:00 <br> знижка 20%</p>
+                </section>
+            </section>
+        </div>
+        <div class="table_footer_angle_mask"></div>
+    </section>
+    
+    <footer id="footer">
+        <ul class="footer_wrapper_block">
+            <li class="footer_address_name">
+                <p class="footer_address_name_of">Барбершоп Бородинський</p>
+                <p class="footer_name_address_of">м.Івано-Франківськ, вул. Бельведерська 19/8 <br> <span class="footer_name_address_of_mobile_span">Тел.: +38 (097) 045-50-67</span></p>
+            </li>
+            <li class="footer_social_networks">
+                <p class="footer_social_networks_title">Давайте дружити!</p>
+                <div class="footer_social_networks_social_wrapper_block">
+                    <div class="footer_social_networks_social_01 footer_social_networks_social">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
+                                <path d="M13.7334 15.1476C14.5777 14.1554 15 13.0283 15 11.7661C15 9.65731 13.291 8.18402 10.8981 7.65262C11.9277 7.39511 12.7018 7.11184 13.2212 6.42675C13.7403 5.74166 13.9999 4.97504 13.9999 4.1282C13.9999 2.9656 13.5529 2.26258 12.659 1.35754C11.7649 0.452494 10.3427 0 8.39224 0H0V17H8.80485C11.5682 17.0001 12.889 16.1398 13.7334 15.1476ZM4.66665 3.36207H6.76663C8.03079 3.36207 8.6631 3.79467 8.6631 4.74113C8.6631 5.08981 8.52764 5.74569 8.25684 6.05278C7.98581 6.35999 7.5205 6.51356 6.86149 6.51356H4.66671V3.36207H4.66665ZM4.64214 13.214V10.1253H7.21591C8.04659 10.1253 8.61795 10.2894 8.92946 10.6172C9.2408 10.9453 9.39691 11.3042 9.39691 11.6945C9.39691 12.085 9.23642 12.4354 8.91603 12.7469C8.59523 13.0586 8.09163 13.214 7.40551 13.214H4.64214Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_social_networks_social_02 footer_social_networks_social">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
+                                <path d="M2.58822 21V11.8484H0V7.73147H2.6474V4.3246C2.6474 4.3246 2.76819 0.0333456 6.16387 0H9.94317V4.04007H7.59887C7.59887 4.04007 6.60905 4.04007 6.60905 5.24749C6.60905 6.45232 6.60905 7.80329 6.60905 7.80329H10L9.59271 11.9177H6.66823V21H2.58822Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_social_networks_social_03 footer_social_networks_social">
+                        <a href="https://www.instagram.com/if_kompschool/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                <path d="M19 0H0V19H19V0ZM9.5 6.01667C11.4241 6.01667 12.9833 7.57657 12.9833 9.5C12.9833 11.4228 11.4241 12.9833 9.5 12.9833C7.57657 12.9833 6.01667 11.4228 6.01667 9.5C6.01667 7.57657 7.57657 6.01667 9.5 6.01667ZM16.4667 16.4667H2.53333V7.91667H4.02737C3.88233 8.41953 3.8 8.95027 3.8 9.5C3.8 12.6477 6.35297 15.2 9.5 15.2C12.6489 15.2 15.2 12.6477 15.2 9.5C15.2 8.95027 15.1177 8.41953 14.9726 7.91667H16.4667V16.4667ZM16.4667 3.17173V5.08187V5.7C16.4667 5.7 16.1836 5.69303 15.8435 5.69873V5.7H13.9333C13.5882 5.7 13.3 5.7 13.3 5.7V2.53333H15.8333L15.8435 2.53523C15.8435 2.53523 16.4667 2.5384 16.4667 2.53333C16.4667 2.53333 16.4654 3.16983 16.4654 3.17173H16.4667Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>  
+            </li>
+            <li class="footer_author_of_the_work">
+                <p class="footer_author_of_the_work_title">ЗВЕРСТАНО:</p>
+                <div class="footer_author_of_the_work_authors_tag">
+                    <p>YUR4ST003</p>
+                </div>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/form.js"></script>
+</body>
+<!-- </html> -->

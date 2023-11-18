@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- form API -->
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/MoG5v7k3A9GbXAjv/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Форму надіслано успішно :)")
+				},
+				error: function(){
+					alert("Виникла Помилка :(")
+				}
+			});
+		}
+	</script>
+    <!--  -->
+
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--  -->
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/hover.css">
+    <!--  -->
+
+    <!-- link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section_login_form">
+        <p class="section_login_form_title">особистий кабінет</p>
+        <p class="section_login_form_subtitle">введіть свій логін та пароль, щоб увійти</p>
+        <form action="" method="post" class="form_login_form">
+            <input type="text" class="icon_text input_icon" value placeholder="Логін">
+            <input type="password" class="icon_password input_icon" value placeholder="Пароль">
+            <section class="form_section">
+              <section class="remember_me_section">
+                <input type="checkbox" id="rememberMeCheckbox">
+                <label for="rememberMeCheckbox" class="remember_me_section_title">Запам'ятайте мене</label>
+              </section>
+              <section class="forgot_password">
+                <p class="forgot_password_title"><u>Я забув пароль!</u></p>
+              </section>
+            </section>
+            <section class="login_button_section">
+                <button class="login_button" type="submit">увійти <span class="login_button_hide_text">в особистий кабінет</span></button>
+                <div class="close_login_button">
+                    <p>закрити</p>
+                </div>
+            </section>
+          </form>
+    </div>
+    <i class="ri-close-line close_button"></i>
+    <header>
+        <!-- Burger menu -->
+        <input type="checkbox" id="checkbox">
+        <label id="toggle" for="checkbox">
+            <span class="burger_menu_span"></span>
+        </label>
+        <div class="burger_menu_mask">
+            <p>записатися</p>
+        </div>
+        <ul class="header_nav_wrapper_list">
+            <div class="nav_li_section li_section">
+                <li class="header_li_item hvr-underline-from-left"><a href="index.html">головна</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="photo.html">наші роботи</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="form.html">записатися</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="#footer">контакти</a></li>
+                <li class="header_li_item hvr-underline-from-left"><a href="http://xn--j1ae8a.in.ua/">шкм</a></li>
+            </div>
+            <div class="login_li_section li_section">
+                <a href="#" class="login_svg_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g opacity="0.3">
+                            <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white"/>
+                            <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white"/>
+                        </g>
+                    </svg>
+                </a>
+                <li class="header_li_item header_li_item_06 hvr-underline-from-left"><a href="#">увійти</a></li>
+            </div>
+        </ul>
+        <!--  -->
+    </header>
+    <main>
+        <section class="main_logo_section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/logo_desktop.png">
+                <source media="(min-width: 767px) and (max-width: 1023px)" srcset="img/logo_tablet.png">
+                <source media="(max-width: 767px)" srcset="img/logo_mobile.png">
+                <img src="img/error.png">
+            </picture>
+        </section>
+    </main>
+    <section class="form_section_02">
+        <div class="title_block_form_section">
+            <p class="form_section_title_block_title">ЗАПИС НА СТРИЖКУ</p>
+            <div class="form_section_title_block_button">
+                <a href="index.html">НА ГОЛОВНУ</a>
+            </div>
+        </div>
+        <section class="section_form_wrapper_block">
+            <form action="" id="myForm" method="post" class="registration_form">
+                <section class="input_form_section">
+                    <input type="text" placeholder="Прізвище" name="surname" class="form_text_type form_text_input form_surname_input">
+                    <input type="text" placeholder="Ім'я" name="name" class="form_text_type form_text_input form_name_input">
+                    <input type="text" placeholder="По-батькові" name="middleName" class="form_text_type form_text_input form_middle_name_input">
+                    <input type="number" placeholder="Контактний телефон" name="phone" class="form_text_type form_text_input form_phone_number_input">
+                    <input type="email" placeholder="Контактний e-mail" name="email" class="form_text_type form_text_input form_email_input">
+                    <textarea name="additionalInformation" placeholder="Дод. інформація для майстра" cols="300" rows="10" class="form_text_type form_text_textarea"></textarea>
+                </section>
+                <section class="beard_model">
+                    <div class="beard_model_title services_section">
+                        <p>ВИБЕРІТЬ МОДЕЛЬ БОРОДИ</p>
+                        <div class="services_title_center_line"></div>
+                    </div>
+                </section>
+                <section class="beard_model_type_of_model_section">
+                    <div class="beard_model_type_of_model beard_model_type_of_model_01">
+                        <input type="radio" name="radio_beard" id="radio_beard_01" class="radio_beard">
+                        <label for="radio_beard_01"></label>
+                        <p class="name_of_type_model">ЗСУ</p>
+                        <img src="img/beard-1.png">
+                    </div>
+                    <div class="beard_model_type_of_model beard_model_type_of_model_02">
+                        <input type="radio" name="radio_beard" id="radio_beard_02" class="radio_beard">
+                        <label for="radio_beard_02"></label>
+                        <p class="name_of_type_model">Лісник</p>
+                        <img src="img/beard-2.png">
+                    </div>
+                    <div class="beard_model_type_of_model beard_model_type_of_model_03">
+                        <input type="radio" name="radio_beard" id="radio_beard_03" class="radio_beard">
+                        <label for="radio_beard_03"></label>
+                        <p class="name_of_type_model">Філософ</p>
+                        <img src="img/beard-3.png">
+                    </div>
+                    <div class="beard_model_type_of_model beard_model_type_of_model_04">
+                        <input type="radio" name="radio_beard" id="radio_beard_04" class="radio_beard">
+                        <label for="radio_beard_04"></label>
+                        <p class="name_of_type_model">Художник</p>
+                        <img src="img/beard-4.png">
+                    </div>
+                    <div class="beard_model_type_of_model beard_model_type_of_model_05">
+                        <input type="radio" name="radio_beard" id="radio_beard_05" class="radio_beard">
+                        <label for="radio_beard_05"></label>
+                        <p class="name_of_type_model">Мудрець</p>
+                        <img src="img/beard-5.png">
+                    </div>
+                </section> 
+                <section class="additional_services_section">
+                    <div class="additional_services_title services_section">
+                        <p>ДОДАТКОВІ ПОСЛУГИ</p>
+                        <div class="services_title_center_line"></div>
+                    </div>
+                    <section class="additional_services_checkbutton_section">
+                        <label class="additional_services_checkbutton_01 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_01">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_01" class="name_of_additional_services">Пофарбувати бороду</label>
+                        </label>
+                        <label class="additional_services_checkbutton_02 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_02">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_02" class="name_of_additional_services">Зачесати бороду</label>
+                        </label>
+                        <label class="additional_services_checkbutton_03 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_03">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_03" class="name_of_additional_services">Забрати сивину</label>
+                        </label>
+                        <label class="additional_services_checkbutton_04 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_04">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_04" class="name_of_additional_services">Накрутити вуса</label>
+                        </label>
+                        <label class="additional_services_checkbutton_05 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_05">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_05" class="name_of_additional_services">Підрівняти скроні</label>
+                        </label>
+                        <label class="additional_services_checkbutton_06 additional_services_checkbutton">
+                            <div class="custom_checkbox_wrapper_block">
+                                <input type="checkbox" name="" id="checkbox_06">
+                                <span class="checkmark"></span>
+                            </div>
+                            <label for="checkbox_06" class="name_of_additional_services">Відполірувати лисину</label>
+                        </label>
+                    </section>
+                </section>    
+                <button class="submit_form_02_button" type="submit" onclick='SubForm()'>ВІДПРАВИТИ ЗАЯВКУ</button>             
+            </form>
+        </section>
+    </section>
+    <div class="footer_angle_mask"></div>
+    <footer id="footer">
+        <ul class="footer_wrapper_block">
+            <li class="footer_address_name">
+                <p class="footer_address_name_of">Барбершоп Бородинський</p>
+                <p class="footer_name_address_of">м.Івано-Франківськ, вул. Бельведерська 19/8 <br> <span class="footer_name_address_of_mobile_span">Тел.: +38 (097) 045-50-67</span></p>
+            </li>
+            <li class="footer_social_networks">
+                <p class="footer_social_networks_title">Давайте дружити!</p>
+                <div class="footer_social_networks_social_wrapper_block">
+                    <div class="footer_social_networks_social_01 footer_social_networks_social">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="17" viewBox="0 0 15 17" fill="none">
+                                <path d="M13.7334 15.1476C14.5777 14.1554 15 13.0283 15 11.7661C15 9.65731 13.291 8.18402 10.8981 7.65262C11.9277 7.39511 12.7018 7.11184 13.2212 6.42675C13.7403 5.74166 13.9999 4.97504 13.9999 4.1282C13.9999 2.9656 13.5529 2.26258 12.659 1.35754C11.7649 0.452494 10.3427 0 8.39224 0H0V17H8.80485C11.5682 17.0001 12.889 16.1398 13.7334 15.1476ZM4.66665 3.36207H6.76663C8.03079 3.36207 8.6631 3.79467 8.6631 4.74113C8.6631 5.08981 8.52764 5.74569 8.25684 6.05278C7.98581 6.35999 7.5205 6.51356 6.86149 6.51356H4.66671V3.36207H4.66665ZM4.64214 13.214V10.1253H7.21591C8.04659 10.1253 8.61795 10.2894 8.92946 10.6172C9.2408 10.9453 9.39691 11.3042 9.39691 11.6945C9.39691 12.085 9.23642 12.4354 8.91603 12.7469C8.59523 13.0586 8.09163 13.214 7.40551 13.214H4.64214Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_social_networks_social_02 footer_social_networks_social">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="21" viewBox="0 0 10 21" fill="none">
+                                <path d="M2.58822 21V11.8484H0V7.73147H2.6474V4.3246C2.6474 4.3246 2.76819 0.0333456 6.16387 0H9.94317V4.04007H7.59887C7.59887 4.04007 6.60905 4.04007 6.60905 5.24749C6.60905 6.45232 6.60905 7.80329 6.60905 7.80329H10L9.59271 11.9177H6.66823V21H2.58822Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_social_networks_social_03 footer_social_networks_social">
+                        <a href="https://www.instagram.com/if_kompschool/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                <path d="M19 0H0V19H19V0ZM9.5 6.01667C11.4241 6.01667 12.9833 7.57657 12.9833 9.5C12.9833 11.4228 11.4241 12.9833 9.5 12.9833C7.57657 12.9833 6.01667 11.4228 6.01667 9.5C6.01667 7.57657 7.57657 6.01667 9.5 6.01667ZM16.4667 16.4667H2.53333V7.91667H4.02737C3.88233 8.41953 3.8 8.95027 3.8 9.5C3.8 12.6477 6.35297 15.2 9.5 15.2C12.6489 15.2 15.2 12.6477 15.2 9.5C15.2 8.95027 15.1177 8.41953 14.9726 7.91667H16.4667V16.4667ZM16.4667 3.17173V5.08187V5.7C16.4667 5.7 16.1836 5.69303 15.8435 5.69873V5.7H13.9333C13.5882 5.7 13.3 5.7 13.3 5.7V2.53333H15.8333L15.8435 2.53523C15.8435 2.53523 16.4667 2.5384 16.4667 2.53333C16.4667 2.53333 16.4654 3.16983 16.4654 3.17173H16.4667Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>  
+            </li>
+            <li class="footer_author_of_the_work">
+                <p class="footer_author_of_the_work_title">ЗВЕРСТАНО:</p>
+                <div class="footer_author_of_the_work_authors_tag">
+                    <p>YUR4ST003</p>
+                </div>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/form_02.js"></script>
+</body>
+</html>
